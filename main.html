@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new note | NoteX</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <header>
+        <p class="heading">NoteX</p>
+    </header>
+    <nav>
+            <a href="index.html">HOME</a>
+            <a href="#">ADD</a>
+            <button id="nav">VIEW</button>
+            <form class="search">
+                    <input type="search" id="searchin" placeholder="Search">
+            </form>
+    </nav>
+</head>
+<body>
+        <div class="container my-3">
+        <br>
+        <h1>Add notes.</h1>
+        <br>
+        <div class="card">
+                <div class="card-body">
+                        <h5 class="card-title">Type in your note!</h5>
+                        <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Title" id="addtitle" aria-label="Username">
+                        </div>
+                        
+                        <div class="input-group">
+                        <textarea class="form-control" aria-label="With textarea" id="addtxt" placeholder="Add note"></textarea>
+                      </div>
+                      <br>
+                  <button class="btn btn-primary" id="addbtn">Add note</button>
+                </div>
+              </div>
+              <br>
+              <hr class="line">
+              <h3>View your  previously made notes.</h3>
+              <br>
+              <div id="rel">
+                <button class="btn btn-primary" id="viewbtn">View pre-made notes</button>
+              </div>
+              <hr class="line">
+              <div id="notes" class="row container-fluid">
+                      
+              </div>
+        </div>
+</body>
+<script src="app.js"></script>
+</html>

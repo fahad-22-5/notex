@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-image: url("gradbg.jpg");
+}
+
+
+header {
+    padding: 80px;
+    background-image: url("wall31.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+    height: 300px;
+    text-align: center;
+}
+
+.heading{
+    font-family: 'Akaya Telivigala', cursive;
+    color: black;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 80px;
+}
+
+.strip{
+    background-image: url("neonbgre.jpg");
+    height: 20px;
+    box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 2px 2px;
+}
+.intro{
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    font-size: 40px;
+    font-family: 'DotGothic16', sans-serif;
+}
+.line{
+    color: white;
+}
+
+.intro2{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+nav {
+    background-color: rgba(26, 111, 190, 1);
+    overflow: hidden;
+    box-shadow: #00000079 2px 2px 2px 2px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: wheat;
+    font-weight: bold;
+}
+
+nav :hover{background-color: rgb(255, 255, 255); color: black;}
+
+.container{
+    height: 400px;
+}
+
+.new{
+    padding-top: 5%;
+    margin-top: 40px;
+    margin-left: 17%;
+    float: left;
+    text-align: center;
+    width: 30%;
+    height: 300px;
+    background-image: url("grad3.png");
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+.newbtn{
+    width: 50%;
+    height: 18%;
+    font-size: 17px;
+    background-color: rgb(95, 212, 79);
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.newbtn:hover{
+    background-color: rgb(79, 182, 65);
+    width: 55%;
+}
+
+.see{
+    text-align: center;
+    float: right;
+    width: 30%;
+    height: 300px;
+    margin-top: 40px;
+    margin-right: 17%;
+    background-image: url("grad.jpg");
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+    padding-top: 5%;
+}
+
+.seebtn{
+    width: 50%;
+    height: 18%;
+    font-size: 17px;
+    background-color: rgb(95, 212, 79);
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.seebtn:hover{
+    background-color: rgb(79, 182, 65);
+    width: 55%;
+}
+
+@media only screen and (max-width: 700px){
+    .new{
+        float: none;
+        width: 70%;
+        align-content: center;
+        padding-top: 15%;
+    }
+    .see{
+        float: none;
+        width: 70%;
+        align-content: center;
+        margin-left: 15.978%;
+        padding-top: 15%;
+    }
+    .container{
+        height: 700px;
+    }
+}
+
+.end{
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
