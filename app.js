@@ -1,5 +1,7 @@
 console.log("This is notex");
 
+
+// Push notes to localstorage when added
 let addbtn = document.getElementById("addbtn");
 addbtn.addEventListener("click", function(e){
 
@@ -24,20 +26,55 @@ addbtn.addEventListener("click", function(e){
     console.log(notesarr);
 })
 
+
+// ****Button actions****
 let navbtn = document.getElementById("nav");
 navbtn.addEventListener("click", viewnotes);
-
-
 let viewbtn = document.getElementById("viewbtn");
 viewbtn.addEventListener("click", viewnotes);
-// viewbtn.addEventListener("click", refreshbtn);
-let reload = document.getElementById("rel");
-// reload.addEventListener("click", viewnotes);
+viewbtn.addEventListener("click", hidebtn);
 
+
+// ***REFRESH BUTTON(REMOVED)***
+
+// viewbtn.addEventListener("click", refreshbtn);
+//let reload = document.getElementById("rel");
+// reload.addEventListener("click", viewnotes);
 // function refreshbtn(){
 //     let reload = document.getElementById("rel");
 //     reload.innerHTML = `<button class="btn btn-primary" id="viewbtn">View pre-made notes</button>          <button class="btn btn-primary" id="ref">🔄</button>`
 // }
+
+
+//****COLLAPSABILITY****
+    
+function hidebtn(){
+    let hide = document.getElementById('collbt');
+    hide.innerHTML = `<button id="hidebtn">🔼</button>`
+
+    let collbtn = document.getElementById('hidebtn');
+    collbtn.addEventListener("click", collapse);
+    collbtn.addEventListener("click", stopc);
+
+    function stopc() {
+        clearTimeout(t);
+        let pre = document.getElementById('collbt');
+        pre.innerHTML = ``
+    }
+
+    function collapse(){
+        let coll = document.getElementById('notes');
+        coll.innerHTML = ``
+        console.log('clicked')
+    }
+}
+
+//*** SCROLL ON CLICK ***
+let scroll = document.getElementById('viewbtn');
+scroll.addEventListener("click", function(e){
+    window.scrollTo(0, document.body.scrollHeight);
+})
+//*** Viewnotes function ***
 
 function viewnotes(){
     let notes = localStorage.getItem("notes");
@@ -70,10 +107,10 @@ function viewnotes(){
     else{
         view.innerHTML = `<h5>Errr.. please add a note :)</h5>`
     }
-    setTimeout(viewnotes, 100);
+    t = setTimeout(viewnotes, 100);
 }
 
-
+//**** Delete function****
 function delnote(index){
     notesarr.splice(index, 1);
     localStorage.setItem("notes", JSON.stringify(notesarr));
@@ -81,6 +118,7 @@ function delnote(index){
 
 }
 
+//*** Search***
 let searchin = document.getElementById("searchin")
 searchin.addEventListener("input", function(){
     let results = document.getElementsByClassName("notecard");

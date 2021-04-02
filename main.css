@@ -86,3 +86,10 @@ nav a:hover{color: white;}
     display: inline;
 }
 
+#hidebtn{
+    border-style: none;
+    background-color: rgb(64, 64, 202);
+    border-radius: 5%;
+    height: 50px;
+    width: 50px;
+}
