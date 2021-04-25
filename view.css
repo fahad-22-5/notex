@@ -4,13 +4,12 @@
 
 body {
     margin: 20px;
-    background-image: url("wall4.png");
     background-position: 100%;
 }
 
 h1{
     text-align: center;
-    color: white;
+    color: rgb(88, 43, 43);
 }
 
 h2{
@@ -39,11 +38,11 @@ header {
 }
 
 nav {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(173, 108, 108);
     overflow: hidden;
     box-shadow: #00000079 2px 2px 2px 2px;
     font-family: 'Roboto Mono', monospace;
-    height: 55px;
+    height: 100px;
 }
 
 nav a {
@@ -65,7 +64,7 @@ nav a:hover{color: white;}
     height: 40px;
     margin-top: 7.5px;
     margin-left: 10px;
-    width: 200px;
+    width: 255px;
     border-radius: 5px;
     border-style: none;
 }
@@ -82,6 +81,12 @@ nav a:hover{color: white;}
     color: rgb(202, 181, 141);
     font-weight: bold;
     border-style: none;
-    background-color: black;
+    background-color: rgb(163, 110, 110);
 }
 #nav:hover{color: white;}
+
+#container{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+}

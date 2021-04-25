@@ -33,6 +33,8 @@ navbtn.addEventListener("click", viewnotes);
 let viewbtn = document.getElementById("viewbtn");
 viewbtn.addEventListener("click", viewnotes);
 viewbtn.addEventListener("click", hidebtn);
+navbtn.addEventListener("click", scroll);
+navbtn.addEventListener("click", hidebtn);
 
 
 // ***REFRESH BUTTON(REMOVED)***
@@ -70,10 +72,13 @@ function hidebtn(){
 }
 
 //*** SCROLL ON CLICK ***
-let scroll = document.getElementById('viewbtn');
-scroll.addEventListener("click", function(e){
-    window.scrollTo(0, document.body.scrollHeight);
-})
+let scroller = document.getElementById('viewbtn');
+scroller.addEventListener("click", scroll);
+    function scroll(){
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+    
+    
 //*** Viewnotes function ***
 
 function viewnotes(){

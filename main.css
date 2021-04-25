@@ -5,6 +5,7 @@
 body {
     margin: 20px;
     background-image: url("bluebgre.jpg");
+    transition: 00.5s;
 }
 
 h1{
@@ -30,17 +31,18 @@ header {
 
 .heading{
     font-family: 'Akaya Telivigala', cursive;
-    color: rgb(255, 255, 255);
+    color: rgb(177, 149, 149);
     font-family: 'Kaushan Script', cursive;
     font-size: 60px;
 }
 
 nav {
     overflow: hidden;
-    box-shadow:rgb(241, 163, 134) 2px 2px 2px 2px;
+    box-shadow:rgb(55, 142, 168);
     font-family: 'Roboto Mono', monospace;
     height: 55px;
-    background-color: coral;
+    background-color: rgb(85, 169, 175);
+    transition: 0.5s;
 }
 
 nav a {
@@ -76,8 +78,8 @@ nav a:hover{color: white;}
     color: rgb(0, 0, 0);
     font-weight: bold;
     border-style: none;
-    background-color: coral;
-    transition: 0.15s
+    background-color: rgb(85, 169, 175);
+    transition: 0.5s
 }
 #nav:hover{color: white;}
 
@@ -88,8 +90,97 @@ nav a:hover{color: white;}
 
 #hidebtn{
     border-style: none;
-    background-color: rgb(64, 64, 202);
+    background-color: rgb(72, 135, 207);
     border-radius: 5%;
     height: 50px;
     width: 50px;
 }
+
+#container {
+    width: 100%;
+    height: 100%;
+    align-items: right;
+    padding-left: 1%;
+    padding-top: 15px;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  .change {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+  }
+  .change input {
+    display: none;
+  }
+  
+  #slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ccc;
+    border-radius: 34px;
+    transition: 0.4s;
+  }
+  
+  #slider:before {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    left: 5px;
+    bottom: 5px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+  input:checked + #slider {
+    background: rgb(85, 169, 175);;
+  }
+  input:checked + #slider:before {
+    transform: translateX(25px);
+  }
+  .dark-mode {
+    background: #1b0f1f;
+  }
+  .dark-mode h1 {
+    color: #f7f0e9;
+  }
+  .dark-mode nav{
+      background-color: rgb(73, 73, 73);
+      box-shadow:rgb(71, 73, 209);
+  }
+  .dark-mode #txt{
+      color: blanchedalmond;
+  }
+
+  .dark-mode #nav{
+      background: rgb(73, 73, 73);
+  }
+
+  .dark-mode h3{
+      color: blanchedalmond;
+  }
+
+  .dark-mode .card{
+      background-color: #25152b;
+  }
+  .dark-mode h5{
+      color: white;
+  }
+
+  .dark-mode .card-text{
+      color: white;
+  }
+
+  #txt{
+      font-size: 25px;
+      font-family: 'Rubik', sans-serif;
+      /* padding-left: 88.2%; */
+  }
+  
