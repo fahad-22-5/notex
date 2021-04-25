@@ -90,3 +90,9 @@ nav a:hover{color: white;}
     font-size: 18px;
     font-family: 'Rubik', sans-serif;
 }
+
+@media only screen and (max-width: 400px){
+    nav{
+        height: 150px;
+    }
+}
